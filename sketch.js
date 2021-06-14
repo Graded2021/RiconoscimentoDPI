@@ -85,7 +85,17 @@ function gotResults(error, results) {
     audio1.pause();
     if (newlabel== "Ok") {
       audio.play();   
-    } else if (newlabel=="No elmetto") {
+      var button
+      button = createButton('PROCEDERE');
+      button.mousePressed(gotolink)
+      button.style('color:green')
+      button.position(500, 500)
+      
+      function gotolink() {
+	window.open('https://www.youtube.com/results?search_query=p5.js+Buttons+which+remand+to+a+link');
+        
+    } }
+    else if (newlabel=="No elmetto") {
       audio1.play();
     } else if (newlabel == "No mascherina") { 
       audio1.play();
