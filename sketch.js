@@ -86,7 +86,7 @@ function gotResults(error, results) {
     if (newlabel== "Ok") {
       audio.play();   
       var button
-      button = createButton('PROCEDERE');
+      button = createButton('Area utenti');
       button.mousePressed(gotolink)
       button.style('color:green')
       button.position(500, 500)
