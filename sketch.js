@@ -92,7 +92,7 @@ function gotResults(error, results) {
       button.position(500, 500)
       
       function gotolink() {
-	window.open('https://www.youtube.com/results?search_query=p5.js+Buttons+which+remand+to+a+link');
+	window.open('https://portale.myefm.it/archibus/login.axvw');
         
     } }
     else if (newlabel=="No elmetto") {
