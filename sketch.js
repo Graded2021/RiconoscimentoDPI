@@ -94,6 +94,7 @@ function gotResults(error, results) {
       function gotolink() {
 	window.open('https://portale.myefm.it/archibus/login.axvw');
         
+	      
     } }
     else if (newlabel=="No elmetto") {
       audio1.play();
