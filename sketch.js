@@ -6,7 +6,7 @@ let Label="indossare mascherina";
 let img;
 let audio = new Audio('DPI rilevato.mp3');
 let audio1= new Audio('Indossare_DPI (1).mp3');
-
+var button
 
 // STEP 1: Load the model!
 function preload() {
@@ -18,6 +18,17 @@ function setup() {
   // Create the video
   video = createCapture(VIDEO);
   video.hide();
+  
+      button = createButton('Area utenti');
+      button.mousePressed(gotolink)
+      button.style('color:green')
+      button.position(500, 500)
+      button.style('display:none')
+         
+  function gotolink() {
+	window.open('https://portale.myefm.it/archibus/login.axvw');
+        
+    }
   
   //Import Image
   
@@ -84,22 +95,15 @@ function gotResults(error, results) {
     audio.pause();
     audio1.pause();
     if (newlabel== "Ok") {
-      audio.play();   
-      var button
-      button = createButton('Area utenti');
-      button.mousePressed(gotolink)
-      button.style('color:green')
-      button.position(500, 500)
-      
-      function gotolink() {
-	window.open('https://portale.myefm.it/archibus/login.axvw');
-        
-	      
-    } }
+      audio.play();
+      button.show();
+    }
     else if (newlabel=="No elmetto") {
       audio1.play();
+      button.style('display:none')
     } else if (newlabel == "No mascherina") { 
       audio1.play();
+      button.style('display:none')
     } 
     label=newlabel
   }
