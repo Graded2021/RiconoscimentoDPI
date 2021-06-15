@@ -23,7 +23,7 @@ function setup() {
       button.mousePressed(gotolink)
       button.style('color:green')
       button.position(500, 500)
-      button.style('display:none')
+      button.hide();
          
   function gotolink() {
 	window.open('https://portale.myefm.it/archibus/login.axvw');
@@ -100,10 +100,10 @@ function gotResults(error, results) {
     }
     else if (newlabel=="No elmetto") {
       audio1.play();
-      button.style('display:none')
+      button.hide()
     } else if (newlabel == "No mascherina") { 
       audio1.play();
-      button.style('display:none')
+      button.hide()
     } 
     label=newlabel
   }
