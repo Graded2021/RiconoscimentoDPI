@@ -4,8 +4,8 @@ let classifier;
 let modelURL1 = 'https://teachablemachine.withgoogle.com/models/lV2EoKSUx/';
 let Label="indossare mascherina";
 let img;
-let audio = new Audio('DPI rilevato.mp3');
-let audio1= new Audio('Indossare_DPI (1).mp3');
+let audio = new Audio('DPI_rilevato.mp3');
+let audio1= new Audio('No_DPI.mp3');
 var button
 
 // STEP 1: Load the model!
