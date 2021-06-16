@@ -62,14 +62,14 @@ function draw() {
     image(ima,0, 20);  
   }
   if (label=="No elmetto") {
-    emoji="Accesso negato";
+    emoji="Accesso negato, indossare DPI";
     emojiColor = 'rgb(255,0,0)';
     image(sino,10, 20);
     
     
   }  
   else if (label == "No mascherina") { 
-    emoji="Accesso negato"
+    emoji="Accesso negato, indossare DPI"
     emojiColor = 'rgb(255,0,0)';
     image(obbligo, 10, 20);
     
