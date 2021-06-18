@@ -56,19 +56,19 @@ function draw() {
   let emoji = "VERIFICA DEI D.P.I. IN CORSO...";
   let emojiColor = 'rgb(0,0,0)';
 
-  if (label== "Ok") {
+  if (label== "SI") {
     emoji = "Accesso consentito";
     emojiColor='rgb(0,255,0)';
     image(ima,0, 20);  
   }
-  if (label=="No elmetto") {
+  if (label=="NO") {
     emoji="Accesso negato, indossare DPI";
     emojiColor = 'rgb(255,0,0)';
     image(sino,10, 20);
     
     
   }  
-  else if (label == "No mascherina") { 
+  else if (label == "No") { 
     emoji="Accesso negato, indossare DPI"
     emojiColor = 'rgb(255,0,0)';
     image(obbligo, 10, 20);
@@ -94,18 +94,16 @@ function gotResults(error, results) {
   if (newlabel != label) { 
     audio.pause();
     audio1.pause();
-    if (newlabel== "Ok") {
+    if (newlabel== "SI") {
       audio.play();
       button.show();
     }
-    else if (newlabel=="No elmetto") {
+    else if (newlabel=="NO") {
       audio1.play();
       button.hide()
-    } else if (newlabel == "No mascherina") { 
-      audio1.play();
-      button.hide()
-    } 
+    }  
     label=newlabel
   }
   classifyVideo();
 }
+
