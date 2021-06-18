@@ -106,4 +106,3 @@ function gotResults(error, results) {
   }
   classifyVideo();
 }
-
