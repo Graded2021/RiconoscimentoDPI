@@ -1,7 +1,7 @@
 let video;
 let label = "Attendere";
 let classifier;
-let modelURL1 = 'https://teachablemachine.withgoogle.com/models/lV2EoKSUx/';
+let modelURL1 = 'https://teachablemachine.withgoogle.com/models/n-1Puqs6w/';
 let Label="indossare mascherina";
 let img;
 let audio = new Audio('DPI_rilevato.mp3');
