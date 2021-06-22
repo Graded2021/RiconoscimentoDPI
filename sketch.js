@@ -22,7 +22,7 @@ function setup() {
       button = createButton('Area utenti');
       button.mousePressed(gotolink)
       button.style('color:green')
-      button.position(500, 500)
+      button.position(800, 100)
       button.hide();
          
   function gotolink() {
