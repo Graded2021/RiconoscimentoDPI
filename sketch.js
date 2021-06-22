@@ -22,7 +22,8 @@ function setup() {
       button = createButton('Area utenti');
       button.mousePressed(gotolink)
       button.style('color:green')
-      button.position(800, 100)
+      button.size(300,60)
+      button.position(150, 530)
       button.hide();
          
   function gotolink() {
