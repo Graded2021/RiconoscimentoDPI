@@ -27,7 +27,7 @@ function setup() {
       button.hide();
          
   function gotolink() {
-	window.open('https://portale.myefm.it/archibus/login.axvw');
+	window.open('https://form.jotform.com/211732767116051');
         
     }
   
