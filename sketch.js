@@ -14,16 +14,17 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1500, 1500);
+  
   // Create the video
   video = createCapture(VIDEO);
   video.hide();
   
-      button = createButton('Area utenti');
+      button = createButton('AREA UTENTI AUTORIZZATI');
       button.mousePressed(gotolink)
       button.style('color:green')
       button.size(300,60)
-      button.position(150, 530)
+      button.position(150,530)
       button.hide();
          
   function gotolink() {
