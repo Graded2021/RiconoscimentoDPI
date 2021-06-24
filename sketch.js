@@ -27,7 +27,7 @@ function setup() {
       button.hide();
          
   function gotolink() {
-	window.open('https://form.jotform.com/211732767116051');
+	window.open('https://form.jotform.com/211742056314043');
         
     }
   
